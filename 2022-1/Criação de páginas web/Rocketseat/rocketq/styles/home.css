@@ -12,7 +12,7 @@ header {
 }
 
 #bg {
-    grid-area: left
+    grid-area: left;
 }
 
 main {
