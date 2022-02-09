@@ -21,11 +21,11 @@ main {
     grid-area: right;
     
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 
-main .content {
-    width: min(36.3rem 100%);
+main .container {
+    width: min(36.3rem, 95%);
 }
 
 main h2 {
@@ -35,10 +35,13 @@ main h2 {
     margin-bottom: 2.4rem;
     font-size: clamp(20px, 5vw, 2.8rem);
 }
-
+/* INPUTS AND BUTTONS */
 input, button, .button {
     height: 5rem;
     border-radius: .8rem;
+
+    margin-bottom: 1.8rem;
+    width: 100%;
 
 }
 
@@ -66,4 +69,26 @@ button, .button {
 
 button:hover, .button:hover {
     filter: brightness(1.2)
+}
+
+button > img, .button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined, .button.outlined {
+    background-color: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue) ;
+
+}
+
+.content header {
+    width: 80%;
+    margin: 3.5rem auto ;
+}
+
+.content header img {
+    width: 16.7rem;
+
 }
