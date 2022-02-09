@@ -1,10 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
 html {
+    /* base colors */
+    
     --black: #0D114F;
     --white: #FAFAFA;
     --red: #E83F5B;
     --light-blue: #E0ECFF;
     --blue: #3485FF;
-    --blackground: #FBFCFF;
+    --background: #FBFCFF;
     --overlay: #040911;
-    --icons-and-detail: #A5B0C1;
+    --icons-details: #A5B0C1;
+
+    /* greys */
+
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-medium: #D3D9E2;
+    --grey-light: #E5EAF1;
+
+    /* hover */
+
+    --hover-blue: #5699FF;
+    --hover-red:  #EA4B65;
+    --hover-grey: #8794A7;
+
+    
+    /* font padronization */
+    font-size: 62.5%   /* 10px */
+
 }
+body {
+    height: 100vh;    
+    background: var(--background);
+}
+
+body, button, input, textarea { 
+    font-size: clamp(14px, 1.6rem, 2vw);
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+
