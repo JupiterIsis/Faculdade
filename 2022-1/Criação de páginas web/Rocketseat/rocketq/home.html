@@ -5,8 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocket.Q</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <p>oi</p>
+    <header>
+        <img src="assets/logo.svg" alt="logo da Rocket.Q">
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Entre como participante</h2>
+                <form action="">
+                    <label class="sr-only" for="room-id">Código da sala</label>
+                    <input type="number" name="Código da sala" placeholder="Código da sala" id="room-id">
+                    <button>
+                        <img src="assets/log-in.svg" alt="Entrar na sala">
+                        Entrar na sala
+                    </button>
+                </form>
+            </section>
+
+            <div class="separator">
+                <div></div>
+                <div>ou</div>
+                <div></div>
+            </div>
+
+            <section>
+                <h2>Crie sua própria sala, de forma fácil</h2>
+                <a href="/create-room">
+                    <img src="assets/users.svg" alt="Criar sala">
+                    Criar sala
+                </a>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
