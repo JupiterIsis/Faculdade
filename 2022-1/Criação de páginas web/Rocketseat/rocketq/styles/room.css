@@ -1,14 +1,22 @@
+.content {
+    max-width: min(112rem, 90%);
+    margin: 0 auto;
+}
+
+/* HEADER */
 #room header {
+    margin-top: 3.2rem;
     width: 100%;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 6.4rem;
 }
 
 #room header .buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 #room header .buttons .button:nth-child(1){
@@ -23,11 +31,106 @@
 }
 
 #room header .buttons .button:nth-child(2){
-    padding: 0 3.2rem;
-    width: 17rem;
+    padding: 1.6rem 3.2rem;
 }
 
 #room header .buttons .button:nth-child(2) img{
-    width: 2rem;
-    height: 2rem;
+    margin-right: 1rem;
+}
+
+/* FORM */
+
+#question-form h2 {
+    font-family: Poppins, sans-serif;
+    color: var(--black);
+    margin-bottom: 2.4rem;
+}
+
+#question-form form {
+    border: .2rem solid var(--grey-blue);
+    border-radius: 0 0.8rem .8rem .8rem;
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+#question-form form footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#question-form form footer > div{ 
+    display: flex;
+    align-items: center;
+    color: var(--icons-details);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+}
+
+#question-form form footer > div img{
+    margin-right: .9rem;
+}
+#question-form form footer button{ 
+    width: 11.6rem
+}
+
+#question-form textarea {
+    outline: none;
+    background: none;
+    width: 100%;
+    resize: none;
+}
+
+#question-form textarea::placeholder {
+    color: var(--grey-blue);
+}
+
+/* QUESTION */
+#questions .question-wrapper {
+    background: var(--light-blue);
+    padding: 2.4rem 3.2rem 2.4rem 2.4rem;
+    border-radius: 0 0.8rem .8rem .8rem;
+
+}
+
+#questions .question-wrapper .question-content {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-family: "Open Sans", sans-serif;
+}
+
+#questions .question-wrapper .question-content .user {
+    margin-right: 1.6rem;
+}
+
+
+#questions .question-wrapper .actions {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#questions .question-wrapper .actions .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.4rem ;
+    color: var(--grey-dark);
+}
+#questions .question-wrapper .actions .delete img {
+
+    margin-right: .8rem;
+}
+
+
+#questions .question-wrapper .actions .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-dark);
+
+}
+#questions .question-wrapper .actions .check img {
+    margin-right: .8rem;
 }
