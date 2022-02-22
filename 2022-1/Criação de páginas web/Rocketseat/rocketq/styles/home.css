@@ -54,38 +54,7 @@ input {
     padding: 0 1.6rem;
 }
 
-button, .button {
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-    line-height: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: var(--blue);
-    color: var(--white);
-    
-    transition: 0.2s;
-
-    cursor:pointer;
-}
-
-button:hover, .button:hover {
-    filter: brightness(1.2)
-}
-
-button > img, .button > img {
-    margin-right: 1rem;
-    width: 2rem;
-}
-
-button.outlined, .button.outlined {
-    background-color: var(--white);
-    color: var(--blue);
-    border: .2rem solid var(--blue) ;
-
-}
 
 .content header {
     width: 80%;
