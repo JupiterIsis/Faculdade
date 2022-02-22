@@ -1,23 +1,40 @@
-body {
-    background: rgb(85, 1, 85);
-    justify-content: center;
-    max-width: 50%;
-    margin: auto;
-}
-header {
-    display: flex;
-    justify-content: center;
+html {
+    --fundo: #551177;
+    --texto: #FFFF00;
+    --link: #FFFF00;
+    --link-visitado: #EEEE00;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav {display: block;}
+body {
+    background: var(--fundo);
+    justify-content: center;
+
+
+}
+header {
+    display: block;
+    text-align: center;
+}
+header img {
+    display: inline;
+}
+
+.apres {
+    text-align: center;
+}
+.apres img {
+    display: inline;
+}
+nav {
+    display: block;
+}
 ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
-
 }
 
 li {
@@ -25,7 +42,5 @@ li {
     display: inline;
     float: left;
     margin: auto;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+    
 }
