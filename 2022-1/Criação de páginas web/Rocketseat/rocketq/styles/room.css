@@ -98,10 +98,14 @@
     align-items: center;
     color: var(--black);
     font-family: "Open Sans", sans-serif;
+    margin-bottom: 4rem;
 }
 
 #questions .question-wrapper .question-content .user {
     margin-right: 1.6rem;
+}
+#questions .question-wrapper .question-content .question {
+
 }
 
 
