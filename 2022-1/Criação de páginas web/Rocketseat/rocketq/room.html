@@ -6,6 +6,7 @@
     <!-- View Port -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
+    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/room.css">
     <link rel="stylesheet" href="styles/global.css">
     <!-- Fonts -->
@@ -54,8 +55,8 @@
                 <div class="questions">
                     <div class="question-wrapper">
                         <div class="question-content">
-                            <div class="user"><img src="/assets/Avatar.svg" alt="Avatar"></div>
-                            <div class="question">Qual o gosto da escuridão?</div>
+                            <div class="user"><img src="/assets/user.svg" alt="Avatar"></div>
+                            <div class="question"><p> Que horas são?</p></div>
                         </div>
                         <div class="actions">
                             <div class="check">
@@ -68,9 +69,55 @@
                             </div>
                         </div>
                     </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user"><img src="/assets/user.svg" alt="Avatar"></div>
+                            <div class="question"><p>Que dia é hoje?</p></div>
+                        </div>
+                        <div class="actions">
+                            <div class="check">
+                                <img src="/assets/check.svg" alt="">
+                                Marcar como lida
+                            </div>
+                            <div class="delete">
+                                <img src="/assets/trash.svg" alt="">
+                                Excluir
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user"><img src="/assets/user.svg" alt="Avatar"></div>
+                            <div class="question"><p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis autem dignissimos doloremque, maiores nisi provident impedit repellendus magni totam nostrum incidunt fuga facere? Eum consequatur perspiciatis quo animi nam. Quaerat. </p></div>
+                        </div>
+                        <div class="actions">
+                            <div class="check">
+                                <img src="/assets/check.svg" alt="">
+                                Marcar como lida
+                            </div>
+                           
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
         
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir Pergunta</h2>
+            <p>Tem certeza que você deseja excluir essa pergunta?</p>
+            <form action="">
+                <label for-id="password" class="sr-only">Digite a sua senha</label>
+                <input id="password"type="password" name="password" placeholder="Digite a senha">
+            </form>
+            <div class="buttons">
+                <div class="button white">Cancelar</div>
+                <button class="red">Sim, excluir</button>
+            </div>
+        </div>
     </div>
 </body>
