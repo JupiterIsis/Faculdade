@@ -127,11 +127,15 @@
 }
 
 #questions .question-wrapper .actions .delete {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 2.4rem ;
     color: var(--grey-dark);
+}
+#questions .question-wrapper .actions .delete:hover {
+    color: red;
 }
 #questions .question-wrapper .actions .delete img {
 
@@ -140,11 +144,16 @@
 
 
 #questions .question-wrapper .actions .check {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--grey-dark);
 
+}
+
+#questions .question-wrapper .actions .check:hover {
+    color: var(--blue);
 }
 #questions .question-wrapper .actions .check img {
     margin-right: .8rem;

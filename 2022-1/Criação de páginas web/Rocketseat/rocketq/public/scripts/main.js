@@ -6,7 +6,7 @@ const deleteButtons = document.querySelectorAll(".actions a.delete")
 
 // opens modal when clicking to remove a question
 deleteButtons.forEach(button => {
-    button.addEventListener("click", event => {handleClick(event, true)})
+    button.addEventListener("click", event => {handleClick(event, false)})
     
 })
 
@@ -29,9 +29,12 @@ checkButtons.forEach(button => {
 
 function handleClick(event, check = true){
     const roomId = document.querySelector("#room-id").dataset.id
-
     const form = document.querySelector(".modal form")
-    form.setAttribute("action", `/room/${roomId}/:question/:action`)
+    const slug = check ? "read" : "delete"
+    const questionId = event.target.dataset.id
+    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)
+
+    
 
     modalActionButton.className = check ? "button" : "red"
     modalTitle.innerHTML = check ? "Marcar como lida" : "Excluir pergunta"
