@@ -4,13 +4,16 @@
   "description": "Um projeto de design full-stack",
   "main": "./src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "keywords": [],
   "author": "Jupiter Isis",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
   }
 }
