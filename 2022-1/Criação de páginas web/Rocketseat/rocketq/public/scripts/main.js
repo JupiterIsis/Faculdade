@@ -29,10 +29,10 @@ checkButtons.forEach(button => {
 
 function handleClick(event, check = true){
     const roomId = document.querySelector("#room-id").dataset.id
-    const form = document.querySelector(".modal form")
+    const form = document.querySelector(".modal .modal-form")
     const slug = check ? "read" : "delete"
     const questionId = event.target.dataset.id
-    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)
+    form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
 
     
 
