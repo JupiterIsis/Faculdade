@@ -6,19 +6,8 @@ const deleteButtons = document.querySelectorAll(".actions a.delete")
 
 // opens modal when clicking to remove a question
 deleteButtons.forEach(button => {
-    button.addEventListener("click", event => { 
-        
-        const roomId = document.querySelector("#room-id").dataset.id
-
-        const form = document.querySelector(".modal form")
-        form.setAttribute("action", `/room/${roomId}/:question/:action`)
- 
-        modalActionButton.className = "red"
-        modalTitle.innerHTML = "Excluir Pergunta"
-        modalDescription.innerHTML = "Tem certeza que você deseja excluir essa pergunta?"
-        modalActionButton.innerHTML = "Sim, excluir"
-        
-        modal.open() } )
+    button.addEventListener("click", event => {handleClick(event, true)})
+    
 })
 
 
@@ -35,14 +24,21 @@ const modalActionButton = document.querySelector(".modal .buttons button")
 
 const checkButtons = document.querySelectorAll(".actions .check")
 checkButtons.forEach(button => {
-    button.addEventListener("click", event => {
-        
-        modalActionButton.className = "button"
-        modalTitle.innerHTML = "Marcar como lida"
-        modalDescription.innerHTML = "Quer mesmo marcar pergunta como lida?"
-        modalActionButton.innerHTML = "Confirmar"
-    
-        modal.open()
-    
-    })
+    button.addEventListener("click", event => {handleClick(event, true)})
 })
+
+function handleClick(event, check = true){
+    const roomId = document.querySelector("#room-id").dataset.id
+
+    const form = document.querySelector(".modal form")
+    form.setAttribute("action", `/room/${roomId}/:question/:action`)
+
+    modalActionButton.className = check ? "button" : "red"
+    modalTitle.innerHTML = check ? "Marcar como lida" : "Excluir pergunta"
+    modalDescription.innerHTML = check ? "Quer mesmo marcar pergunta como lida?" : "Tem certeza que você deseja excluir essa pergunta?"
+    modalActionButton.innerHTML = check ? "Confirmar" : "Sim, excluir"
+
+    modal.open()
+
+
+}
