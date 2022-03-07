@@ -1,0 +1,38 @@
+* {
+    border:none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #116688;
+    color: #EEEE22;
+}
+
+a {
+    color: #FFFF22;
+}
+a:visited {
+    color: #DDDD22;
+}
+
+p {
+    margin: 0;
+}
+
+table {
+    width: 100vw;
+    height: 95vh;
+}
+.logo {
+    width: 10%;
+    height: 2em;
+}
+
+.footer {
+    justify-content: end;
+}
+
+hr{
+    width: 375px;
+    border-top: 1px solid yellow;
+}
