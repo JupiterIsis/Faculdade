@@ -28,11 +28,16 @@ module.exports = {
                     "${password}"
                 )`)
             }
-            
+
         }
 
         await db.close()
 
         res.redirect(`/room/${roomId}`)
+    },
+
+    async open(req,res){
+        const roomId = req.params.room
+        res.render("room", {roomId: roomId})
     }
 }
