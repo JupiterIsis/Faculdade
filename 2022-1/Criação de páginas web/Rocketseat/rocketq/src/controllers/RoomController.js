@@ -9,9 +9,7 @@ module.exports = {
         for (let i = 0; i < 6; i++){
             roomId += Math.floor(Math.random() * 10).toString()
         }
-        
-        console.log(roomId.toString())
-        
+                
         await db.run(`INSERT INTO rooms (
             id,
             pass
