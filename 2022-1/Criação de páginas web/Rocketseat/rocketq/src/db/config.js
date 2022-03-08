@@ -7,3 +7,4 @@ module.exports = () => {
         driver: sqlite3.Database
     })
 }
+
