@@ -40,9 +40,9 @@
         <main>
             <section id="question-form">
                 <h2>Faça sua pergunta</h2>
-                <form action="" method="post">
+                <form action="/question/create/<%= roomId %>" method="post">
                     <label class="sr-only">O quê você quer perguntar?</label>
-                    <textarea name="" id="question" cols="30" rows="4" placeholder="O que você quer perguntar?"></textarea>
+                    <textarea name="question" id="question" cols="30" rows="4" placeholder="O que você quer perguntar?"></textarea>
                     <footer>
                         <div>
                             <img src="/images/lock.svg" alt="">

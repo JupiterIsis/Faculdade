@@ -29,7 +29,7 @@ module.exports = {
                 )`)
             }
 
-        }
+        } 
 
         await db.close()
 
@@ -39,5 +39,7 @@ module.exports = {
     async open(req,res){
         const roomId = req.params.room
         res.render("room", {roomId: roomId})
+
+        await db.all(`SELECT * FROM questions WHERE roomId = ${roomId}`)
     }
 }
