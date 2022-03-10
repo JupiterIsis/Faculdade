@@ -20,11 +20,11 @@ module.exports = {
             }
 
             
+        res.redirect(`/room/${roomId}`)
         } else {
-            console.log(`Password not working. In database = ${verifyRoom}`)
+            res.render("passwordincorrect", {roomId: roomId})
         }
         
-        res.redirect(`/room/${roomId}`)
 
     },
 
