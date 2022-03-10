@@ -13,7 +13,7 @@ module.exports = {
         // Verify password  
         const verifyRoom = await db.get(`SELECT * FROM rooms WHERE id = ${roomId}`)
         if (verifyRoom.pass === password) {
-            if(action == "check"){
+            if(action == "read"){
                 await db.run(`UPDATE questions SET read = 1 WHERE id = ${questionId}`)                
             } else if(action == "delete") {
                 await db.run(`DELETE FROM questions where id = ${questionId}`)
