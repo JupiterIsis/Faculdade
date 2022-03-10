@@ -30,7 +30,7 @@
                     <%=roomId%>
                     <img src="/images/copy.svg" alt="Copy room ID">
                 </a>
-                <a class="button">
+                <a href="/create-pass" class="button">
                     <img src="/images/users-white.svg" alt="Copy room ID">
                     Criar sala
                 </a>
@@ -55,6 +55,11 @@
             <section id="questions">
                 <h2 class="sr-only">Perguntas da comunidade</h2>
                 <div class="questions">
+
+                    <% if(!isQuestion) { %>
+                        <%- include('parts/no-questions') %>
+                    <% }%>
+
                     <% questions.forEach(question => {%>
                         <div class="question-wrapper">
                             <div class="question-content">
