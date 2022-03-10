@@ -13,15 +13,19 @@ module.exports = {
         
         // Verify password  
         const verifyRoom = await db.all(`SELECT * FROM rooms WHERE id = ${roomId}`)
-        if (verifyRoom.password == password) {
+        if (verifyRoom.pass === password) {
             if(action == "check"){
                 await db.run(`UPDATE questions SET read = 1 WHERE id = ${questionId}`)                
             } else if(action == "delete") {
                 await db.run(`DELETE FROM questions where id = ${questionId}`)
             }
-            res.redirect(`/room/${roomId}`)
-        }
 
+            
+        } else {
+            console.log(`Password not working. In database = ${verifyRoom}`)
+        }
+        
+        res.redirect(`/room/${roomId}`)
 
     },
 
