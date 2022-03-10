@@ -10,9 +10,8 @@ module.exports = {
         const questionId = req.params.question
         const action = req.params.action
         const password = req.body.password
-        
         // Verify password  
-        const verifyRoom = await db.all(`SELECT * FROM rooms WHERE id = ${roomId}`)
+        const verifyRoom = await db.get(`SELECT * FROM rooms WHERE id = ${roomId}`)
         if (verifyRoom.pass === password) {
             if(action == "check"){
                 await db.run(`UPDATE questions SET read = 1 WHERE id = ${questionId}`)                

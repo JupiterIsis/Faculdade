@@ -11,7 +11,7 @@ route.get("/room/:room", RoomController.open)
 
 
 route.post("/question/create/:room", QuestionController.create)
-route.post('/question/:room/:question/:action', QuestionController.index)
+route.post("/question/:room/:question/:action", QuestionController.index)
 
 
 module.exports = route
