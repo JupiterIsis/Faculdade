@@ -222,3 +222,48 @@ td, th {
 h2 {
     color: #EEEE22
 }
+
+#loginCad {
+    width: 350px;
+}
+
+#idEmail {
+    width: 160px;
+    float: left;
+}
+
+#senhaCad {
+    width: 100px;
+}
+
+#senhaBox {
+    display: flex;
+}
+
+#listSelProdutos {
+    width: 370px;
+    float: right;
+    display: block;
+}
+
+#fsBandeira {
+    width: 80px;
+    text-align: left;
+    height: 80px;
+}
+
+#numCartao {
+    width: 350px;
+    height: 35px;
+    padding-top: 10px;
+}
+
+#valCartao {
+    width: 230px;
+    height: 35px;
+}
+
+#boxParcel {
+    width: 230px;
+    height: 30px;
+}
