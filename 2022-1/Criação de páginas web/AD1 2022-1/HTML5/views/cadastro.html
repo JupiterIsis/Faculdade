@@ -33,7 +33,71 @@
         </ul>
     </nav>
     <section class="apres">
-        
+        <form action="" class="FormBox">
+            <h2>Cadastro</h2>
+            <fieldset class="FSLinhaInteira">
+                <legend>Identificação</legend>
+                    <div class="LinhaForm">
+                        <div class="LabBox"><label for="email">E-mail:</label></div>
+                        <input type="text" class="InpBoxGnd" name="email">
+                    </div>
+                <div class="LinhaForm">
+                    <div class="ColEsq">
+                        <label for="senha">Senha:</label>
+                        <input type="password" class="InpBoxMed" name="senha">
+                    </div>
+                    <div class="ColDir">
+                        <label for="confirmar-senha">Confirme:</label>
+                        <input type="password" class="InpBoxMed" name="confirmar-senha">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="FSLinhaInteira">
+                <legend>Dados Pessoais</legend>
+                <div class="LinhaForm">
+                    <div class="LabBox"><label for="nome">Nome:</label></div>
+                    <input type="text" class="InpBoxGnd" name="nome">
+                </div>
+                <div class="LinhaForm" id="linhaEnder">
+                    <div class="LabBox"><label for="endereco">Endereço:</label></div>
+                    <input type="text" class="InpBoxGnd" name="endereco" id="inpEnder">
+                </div>
+                <div class="LinhaForm">
+                    <div class="ColEsq">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" class="InpBoxMed" name="telefone">
+                    </div>
+                    <div class="ColDir">
+                        <label for="celular">Celular:</label>
+                        <input type="text" class="InpBoxMed" name="celular">
+                    </div>
+                </div>
+                <fieldset class="FSColEsq">
+                    <legend>Nascimento</legend>
+                    <label for="nascimento"></label>
+                    <input type="date" name="nascimento">
+                </fieldset>
+                <fieldset class="FSColDir" id="gender">
+                    <legend>Gênero</legend>
+                    <div>
+                        <input type="radio" name="Mas" id="masc">
+                        <label for="Mas">Mas</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Fem" id="masc">
+                        <label for="Fem">Fem</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Outro" id="masc">
+                        <label for="Outro">Outro</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <div class="botoes">
+                <button type="submit">Comprar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
     </section>
 </body>
 </html>
