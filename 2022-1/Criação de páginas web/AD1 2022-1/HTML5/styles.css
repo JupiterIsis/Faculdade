@@ -38,6 +38,11 @@ ul, ol {
     line-height: 200%;
 }
 
+.memorylist li a, .memorylist li a:visited {
+    color: #116688;
+}
+
+
 nav>ul{
     color: #FFDD22;
     line-height: 230%;
