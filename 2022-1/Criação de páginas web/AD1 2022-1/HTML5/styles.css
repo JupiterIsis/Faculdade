@@ -38,8 +38,8 @@ ul, ol {
     line-height: 200%;
 }
 
-.memorylist li a, .memorylist li a:visited {
-    color: #116688;
+.listaMemo li a, .listaMemo li a:visited {
+    color: #005599;
 }
 
 
