@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Rubik:wght@300;400&display=swap" rel="stylesheet"> 
 
+    <script src="../scripts/cadastro.js"></script>
+
     <link rel="stylesheet" href="/HTML5/styles.css">
     
     <title>PakiMemo</title>
 </head>
-<body>
+<body onload="addEventListeners()">
     <header>
         <img class='imgLogo' src="../../assets/PakiLogoTopo.png" alt="PakiMemo Logo">
  
@@ -65,11 +67,11 @@
                 <div class="LinhaForm">
                     <div class="ColEsq">
                         <label for="telefone">Telefone:</label>
-                        <input type="text" class="InpBoxMed" name="telefone">
+                        <input class="num" type="text" class="InpBoxMed" name="telefone">
                     </div>
                     <div class="ColDir">
                         <label for="celular">Celular:</label>
-                        <input type="text" class="InpBoxMed" name="celular">
+                        <input class="num" type="text" class="InpBoxMed" name="celular">
                     </div>
                 </div>
                 <fieldset class="FSColEsq">
