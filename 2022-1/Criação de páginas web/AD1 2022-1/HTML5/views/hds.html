@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Rubik:wght@300;400&display=swap" rel="stylesheet"> 
 
+    <script src="../scripts/hds.js"></script>
+
     <link rel="stylesheet" href="/HTML5/styles.css">
-    
+    <link rel="stylesheet" href="../styles/hds.css">
+
     <title>PakiMemo</title>
 </head>
-<body>
+<body onload="addEventListeners()">
     <header>
         <img class='imgLogo' src="../../assets/PakiLogoTopo.png" alt="PakiMemo Logo">
  
@@ -35,53 +38,48 @@
     <section class="apres">
         <table class="tabDisco">
             <tr>
-               <th class="tableTitle" colspan="5"> HDs e SSDs Internos</th>
+               <th class="tableTitle" colspan="3"> HDs e SSDs Internos</th>
             </tr>
             <tr>
                 <th class="linTH">Tipo/Interface</th>
                 <th class="linTH">Fabricante</th>
-                <th class="linTH">Capacidade</th>
-                <th class="linTH">Foto</th>
-                <th class="linTH">Preço</th>
+                <th class="linTH">Descrição</th>
             </tr>
             <tr>
-                <td class="colTH"rowspan="2"> HD Sata III</td>
-                <td>Western Digital</td>
-                <td>500 Gb</td>
-                <td><img class="imgDisco" src="/assets/HD_WD_500gb_70.jpg" alt=""></td>
-                <td><span class="preco">R$ 170,00</span></td>
+                <td class="colTH" rowspan="2"> HD Sata III</td>
+                <td><a class="hd" data-index="0" href="" >Western Digital</a></td>
+                <td rowspan="6">
+                    <h3 id="titDes"></h3>
+                    <img id="imgDes" src="/assets/vazio.jpg" alt="">
+                    <div id="textoDes">
+                        <p id="interface"></p>
+                        <p id="capacidade"></p>
+                        <p id="preco"></p>
+                    </div>
+                </td>
+
             </tr>
             <tr>
-                <td>Seagate</td>
-                <td>1 Tb</td>
-                <td><img class="imgDisco" src="/assets/HD_Seagate_1Tb_70.jpg" alt=""></td>
-                <td><span class="preco">R$ 350,00</span></td>
+                <td><a class="hd" data-index="1" href="" >Seagate</a></td>
+
             </tr>
             <tr>
                 <td class="colTH" rowspan="2">SSD Sata III</td>
-                <td>Samdisk</td>
-                <td>480 Gb</td>
-                <td><img class="imgDisco" src="/assets/SSD_Samdisk_480Gb_70.jpg" alt=""></td>
-                <td><span class="preco">R$ 380,00</span></td>
+                <td><a class="hd" data-index="2" href="">Samdisk</a></td>
+
             </tr>
             <tr>
-                <td>Kingston</td>
-                <td>960 Gb</td>
-                <td><img class="imgDisco" src="/assets/SSD_Kingston_960Gb_70.jpg" alt=""></td>
-                <td><span class="preco">R$ 700,00</span></td>
+                <td><a class="hd" data-index="3" href="" >Kingston</a></td>
+
             </tr>
             <tr>
                 <td class="colTH" rowspan="2">SSD M2</td>
-                <td>Kingston</td>
-                <td>500 Gb</td>
-                <td><img class="imgDisco" src="/assets/SSD_Kingston_M2_5000Gb_70.jpg" alt=""></td>
-                <td><span class="preco">R$ 410,00</span></td>
+                <td><a class="hd" data-index="4" href="" >Kingston</a></td>
+
             </tr>
             <tr>
-                <td>Western Digital</td>
-                <td>240 Gb</td>
-                <td><img class="imgDisco" src="/assets/SSD_WD_M2_240Gb_70.jpg" alt=""></td>
-                <td><span class="preco">R$ 270,00</span></td>
+                <td><a class="hd" data-index="5" href="" >Western Digital</a></td>
+
             </tr>
         </table>
     </section>
