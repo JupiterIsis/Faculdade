@@ -1,35 +1,4 @@
-const lista_memorias = [
-    {
-        tipo:"DDR3",
-        src: "/assets/Mem_Kingston_4gb_200.jpg",
-        fabricante:"Kingston",
-        capacidade: "4Gb",
-        preco: "150,00",
-        
-    },
-    {
-        tipo:"DDR3",
-        src: "/assets/Mem_Samsung_8g_200.jpg",
-        fabricante: "Samsung",
-        capacidade: "8Gb",
-        preco:"300,00"
-    },
-    {
-        tipo: "DDR4",
-        src: "/assets/Mem_Fury_8gb_200.jpg",
-        fabricante: "Kingston Fury",
-        capacidade: "8Gb",
-        preco:"250,00"
-    },
-    {
-        tipo: "DDR4",
-        src: "/assets/Mem_Corsair_8gb_200.jpg",
-        fabricante: "Corsair Vengeance",
-        capacidade: "8Gb",
-        preco:"270,00"
-    }
-]
-
+import { lista_memorias } from "./produtos";
 
 // preenche os campos HTML com as informações adequadas
 function populateHTML(){

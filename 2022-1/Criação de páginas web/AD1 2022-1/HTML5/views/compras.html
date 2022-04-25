@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Rubik:wght@300;400&display=swap" rel="stylesheet"> 
 
+    <script type="module" src="../scripts/compras.js"></script>
+    <script type="module" src="../scripts/produtos.js"></script>
+
     <link rel="stylesheet" href="/HTML5/styles.css">
     
     <title>PakiMemo</title>
 </head>
-<body>
+<body onload="populateListeners()">
     <header>
         <img class='imgLogo' src="../../assets/PakiLogoTopo.png" alt="PakiMemo Logo">
  
@@ -57,24 +60,24 @@
                     <div class="LabBox"><label for="produtos">Produtos:</label></div>
                     <select name="produtos" id="produtos" id="listSelProdutos">
                         <optgroup label="Memória DDR3">
-                            <option value="Kingston 4 Gb">Kingston 4Gb</option>
-                            <option value="Samsung 8 Gb">Samsung 8 Gb</option>
+                            <option value="Kingston 4 Gb" data-index="0" data-type="memoria">Kingston 4Gb</option>
+                            <option value="Samsung 8 Gb" data-index="1" data-type="memoria">Samsung 8 Gb</option>
                         </optgroup>
                         <optgroup label="Memória DDR4">
-                            <option value="Kingston Fury 8 Gb">Kingston Fury 8 Gb</option>
-                            <option value="Corsair Vengeance 8 Gb">Corsair Vengeance 8 Gb</option>
+                            <option value="Kingston Fury 8 Gb" data-index="2" data-type="memoria">Kingston Fury 8 Gb</option>
+                            <option value="Corsair Vengeance 8 Gb" data-index="3" data-type="memoria">Corsair Vengeance 8 Gb</option>
                         </optgroup>
                         <optgroup label="HD Sata III">
-                            <option value="Western Digital 500 Gb">Western Digital 500 Gb</option>
-                            <option value="Seagate 1 Tb">Seagate 1 Tb</option>
+                            <option value="Western Digital 500 Gb" data-index="0" data-type="hd">Western Digital 500 Gb</option>
+                            <option value="Seagate 1 Tb" data-index="1" data-type="hd">Seagate 1 Tb</option>
                         </optgroup>
                         <optgroup label="SSD Sata III">
-                            <option value="Samdisk 480 Gb">Samdisk 480 Gb</option>
-                            <option value="Kingston 960 Gb">Kingston 960 Gb</option>
+                            <option value="Samdisk 480 Gb" data-index="2" data-type="hd">Samdisk 480 Gb</option>
+                            <option value="Kingston 960 Gb" data-index="3" data-type="hd">Kingston 960 Gb</option>
                         </optgroup>
                         <optgroup label="SSD M2">
-                            <option value="Kingston 500 Gb">Kingstoon 500 Gb</option>
-                            <option value="Western Digital 240 Gb">Western Digital 240 Gb</option>
+                            <option value="Kingston 500 Gb" data-index="4" data-type="hd">Kingstoon 500 Gb</option>
+                            <option value="Western Digital 240 Gb" data-index="5" data-type="hd">Western Digital 240 Gb</option>
                         </optgroup>
                     </select>
                     <div class="ColDir" id="btnIncluir">
@@ -84,7 +87,7 @@
                 <textarea name="lista-produtos" id="lista-produtos" cols="50" rows="3"></textarea>
                 <div class="ColDir">
                     <div class="LabBox"><label for="valor">Valor: R$</label></div>
-                    <input type="text" class="InpBoxMed">
+                    <input type="text" class="InpBoxMed" name="valor">
                 </div>
             </fieldset>
             <fieldset class="FSLinhaInteira">
