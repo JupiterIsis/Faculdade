@@ -9,9 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Rubik:wght@300;400&display=swap" rel="stylesheet"> 
 
-    <script type="module" src="../scripts/compras.js"></script>
-    <script type="module" src="../scripts/produtos.js"></script>
-
     <link rel="stylesheet" href="/HTML5/styles.css">
     
     <title>PakiMemo</title>
@@ -59,6 +56,7 @@
                 <div class="LinhaForm">
                     <div class="LabBox"><label for="produtos">Produtos:</label></div>
                     <select name="produtos" id="produtos" id="listSelProdutos">
+                            <option value="-----" data>-----</option>
                         <optgroup label="Memória DDR3">
                             <option value="Kingston 4 Gb" data-index="0" data-type="memoria">Kingston 4Gb</option>
                             <option value="Samsung 8 Gb" data-index="1" data-type="memoria">Samsung 8 Gb</option>
@@ -81,13 +79,13 @@
                         </optgroup>
                     </select>
                     <div class="ColDir" id="btnIncluir">
-                        <button>Incluir</button>
+                        <button name="applyFields">Incluir</button>
                     </div>
                 </div>
                 <textarea name="lista-produtos" id="lista-produtos" cols="50" rows="3"></textarea>
                 <div class="ColDir">
                     <div class="LabBox"><label for="valor">Valor: R$</label></div>
-                    <input type="text" class="InpBoxMed" name="valor">
+                    <input type="text" class="InpBoxMed" name="valor" value="0">
                 </div>
             </fieldset>
             <fieldset class="FSLinhaInteira">
@@ -123,4 +121,6 @@
         </form>
     </section>
 </body>
+<script src="../scripts/compras.js"></script>
+
 </html>
